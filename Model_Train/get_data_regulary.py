@@ -2,9 +2,13 @@ import requests
 import pandas as pd
 import numpy as np
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def fetch_data():
-     api_key = '218cb831cdb04fa88cc1efe39ae40673'
+     api_key = os.getenv("API_KEY")
 
      # url giải đẩu Premier League
      url = 'https://api.football-data.org/v4/competitions/PL/matches'
