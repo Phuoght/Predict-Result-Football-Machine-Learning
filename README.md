@@ -13,6 +13,10 @@ Dự án này sử dụng Machine Learning để dự đoán kết quả trận 
 
 ## Yêu cầu hệ thống
 - Python 3.11.3
+  
+## Môi trường `.env`
+Bạn cần tạo file `.env` trong thư mục chính để lưu thông tin quan trọng như API key của football-data.org:
+- API_KEY=your_api_key_here
 
 ## Cách chạy dự án
 1. **Clone repository**:
