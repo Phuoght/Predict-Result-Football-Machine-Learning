@@ -9,8 +9,7 @@ from xgboost import XGBClassifier
 from sklearn.linear_model import LogisticRegression
 
 
-#matches_df = gdr.fetch_data()
-matches_df = pd.read_csv('Model_Train/data_to_4-11-2024.csv')
+matches_df = gdr.fetch_data()
 
 matches_df['Phong Độ Gần Đây Đội Nhà'] = matches_df.groupby('Đội Chủ Nhà')['Kết quả'].transform(lambda x: x.rolling(3, min_periods=1).mean())
 matches_df['Phong Độ Gần Đây Đội Khách'] = matches_df.groupby('Đội Khách')['Kết quả'].transform(lambda x: x.rolling(3, min_periods=1).mean())
