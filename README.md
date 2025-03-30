@@ -20,11 +20,11 @@ Dự án này sử dụng Machine Learning để dự đoán kết quả trận 
 2. **Cài đặt thư viện phụ thuộc**:
    pip install -r requirements.txt
 3. **Chạy script huấn luyện và dự đoán**:
-   cd Predict-Result-Football-Machine-Learning
-   cd Model_Train
-   python train_model_final.py
-   cd ..
-   python app.py
+   - cd Predict-Result-Football-Machine-Learning
+   - cd Model_Train
+   - python train_model_final.py
+   - cd ..
+   - python app.py
 
 ## Kết quả và Đánh giá
 - Độ chính xác trung bình của mô hình: **~84%** trên tập kiểm tra.
